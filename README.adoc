@@ -1,0 +1,10 @@
+Przetwarzanie obrazów cyfrowych
+-------------------------------
+Mikołaj Piecuch - zliczanie samochodów
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Projekt został napisany w języku C++ z wykorzystaniem biblioteki OpenCV (v. 3.4.1) oraz środowiska Visual Studio 2017. 
+
+W celu wykrycia poruszających się samochodów, program ekstrahuje tło z każdej klatki filmu używając algorytmu opartego o mieszaniny gaussowskie (Gaussian Mixture-based Background/Foreground Segmentation Algorithm). Każdy wykryty obiekt jest przechowywany w autorskiej strukturze danych, która pomaga śledzić obiekty na przestrzeni kilku klatek. Dzięki takiemu rozwiązaniu program jest w stanie bardzo łatwo stwierdzić kiedy śledzony samochód przekroczy umowną linię i zostanie zliczony. Gwarantuje to bardzo dokładny licznik przejeżdżających samochodów.
+
+Do testów został użyty ten *https://www.youtube.com/watch?v=nt3D26lrkho&t=6s[film^]*.
